@@ -35,7 +35,7 @@
 #endif
     else {
         image = [[UIImage alloc] initWithData:data];
-        if (data.length / 1024 > 90) {
+        if (data.length / 1024 > 512) {
             image = [self compressImageWith:image];
         }
 #if SD_UIKIT || SD_WATCH
